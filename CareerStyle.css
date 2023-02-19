@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+    margin: 4px;
+    /* border: 2px solid black; */
+    width: auto;
+    height: 100vh;
+    
+
+}
+
+.container{
+    display: flex;
+    flex: row;
+    align-items: center;
+
+}
+
+.buttons{
+    width: 25%;
+    height: 96.5vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.images{
+    width: 72.5%;
+    height: 96.5vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px;
+}
+
+.button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size:16px ;
+    width: 230px;
+    padding: 10px 10px;
+    box-shadow: 0 0 20px rgba(12, 6, 51, 0.678);
+    transition: 0.6s;
+    color: black;
+    font-family: 'Montserrat';
+    letter-spacing: 0.03rem; 
+    flex-wrap:wrap;
+}
+
+.button:hover {
+    color: white;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgb(243, 174, 63);
+}
+
+.education{
+    margin-bottom: 40px;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work{
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-image{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 0px;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 1px solid black;
+    box-shadow: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.952);
+}
+
+.heading{
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-stretch: expanded;
+    color: #F7CD2E;
+}
+
+.homepage-button{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+}
+
+.homepage-button:hover {
+    color: white;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgb(23, 168, 59);
+}

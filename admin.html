@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>admin page | V Scholar</title>
+        <link rel="stylesheet" href="adminStyles.css">
+    </head>
+
+    <body class="body">
+        <a href="Scholar.html" class="features-button">Go to features </a>
+        <div class="main-container">
+            <div class="container">
+                <form action="admin.php" method="POST" >
+                    <h2 name="newuser" id="newuser" class="newuser">Add User </h2><br>
+                    <input type="text"  maxlength="10" class="username" name="username" placeholder="username" id="username" required><br>
+                    <input type="password" maxlength="5" class="password" name="password" placeholder="web-access-key" id="password" required><br>
+                    <button type="submit" class="submit" name="add" value="add">Add</button>
+                </form>
+            </div>
+
+            <div class="container">
+                <form action="admin.php" method="POST" >
+                    <h2 name="deleteuser" id="deleteuser" class="deleteuser">Delete User </h2><br>
+                    <input type="text"  maxlength="10" class="username" name="username" placeholder="username" id="username" required><br>
+                    <input type="password" maxlength="5" class="password" name="password" placeholder="web-access-key" id="password" required><br>
+                    <button type="submit" class="submit delete" name="delete" value="delete">Delete</button>
+                </form>
+            </div>
+
+            <div class="container updatecontainer">
+                <form action="admin.php" method="POST" >
+                    <h2 name="updateuser" id="updateuser" class="updateuser">Update User </h2><br>
+                    <div class="update-container">
+                        <div class="inner-container">
+                            <input type="text"  maxlength="10" class="username" name="oldusername" placeholder="old username" id="oldusername" required><br>
+                            <input type="password" maxlength="5" class="password" name="oldpassword" placeholder="old web-access-key" id="oldpassword" required><br>
+                        </div class="inner-container">
+                        <div>
+                            <input type="text"  maxlength="10" class="username" name="newusername" placeholder="new username" id="newusername" required><br>
+                            <input type="password" maxlength="5" class="password" name="newpassword" placeholder="new web-access-key" id="newpassword" required><br>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit update" name="update" value="update">Update</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

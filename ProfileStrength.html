@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardhaman Scholar | Profile</title>
+    <link href="ProfileStyle.css" rel="stylesheet">
+    
+</head>
+<body>  
+    <div class="container" width="100vh" height="100vh">
+        <div class="form-container">
+            <header class="form-header">
+                <h2 class="form-heading">Check Your Profile Strength ..!</h2>\
+                <div class="percentage">
+                    <!-- <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="35" stroke="#120E43" stroke-width="4" fill="#6AC47E" id="circle" />
+                       
+                    </svg> -->
+                    <h2 id="strength"></h2>
+                </div>
+            </header>
+
+            <section class="form-body">
+                <form class="form" action="/submit" method="post" target="_blank">
+                   <section class="section1">
+                    <section class="left-section">
+                        <h1 class="form-sub-headings">Academic Scores</h1>
+                        <input type="text" class="input-field" placeholder="Enter class - 10 Score" required>
+                        <input type="text" class="input-field" placeholder="Enter Intermediate Score" required>
+                        <input type="text" class="input-field" placeholder="Enter Engineering Score" required>
+
+                        <h1 class="form-sub-headings left">Academic Projects</h1>
+                        <input type="text" class="input-field" placeholder="Project - 1 Title" required>
+                        <input type="text" class="input-field" placeholder="Project - 2 Title" required>
+                        <input type="text" class="input-field" placeholder="Project - 3 Title" required>
+
+                    </section>
+
+                    <section class="middle-section">
+                       
+                        <h1 class="form-sub-headings middle publications">Publications</h1>
+                        <input type="text" class="input-field" placeholder="Enter publication - 1 name" required>
+                        <input type="text" class="input-field" placeholder="Enter publication - 2 name" required>
+                        <input type="text" class="input-field" placeholder="Enter publication - 3 name" required>
+                        
+                        <h1 class="form-sub-headings middle">Internships</h1>
+                        <input type="text" class="input-field" placeholder="Enter Internship - 1 name" required>
+                        <input type="text" class="input-field" placeholder="Enter Internship - 2 name" required>
+                        <input type="text" class="input-field" placeholder="Enter Internship - 3 name" required>
+
+                    </section>
+
+                    <section class="right-section">
+                        <h1 class="form-sub-headings right">Coding Profiles</h1>
+                        <input type="text" class="input-field" placeholder="HackerRank Score" required>
+                        <input type="text" class="input-field" placeholder="CodeChef Score" required>
+                        <input type="text" class="input-field" placeholder="Codeforces Score" required>
+                        <input type="text" class="input-field" placeholder="InterviewBit Score" required>
+                        <input type="text" class="input-field" placeholder="GeeksForGeeks Score" required>
+                        <input type="text" class="input-field" placeholder="HackerEarth Score" required>
+                        <input type="text" class="input-field" placeholder="SPOJ Score" required>
+                    </section>
+
+                </section> 
+
+                <section class="section2">
+                    <section class="left-section">
+                        <h1 class="form-sub-headings">Technical Skils</h1>
+                        <input type="text" class="input-field" placeholder="Ex: Web Development" required>
+                        <input type="text" class="input-field" placeholder="" required>
+                        <input type="text" class="input-field" placeholder="" required>
+
+                        <h1 class="form-sub-headings left">Prog. Languages</h1>
+                        <input type="text" class="input-field" placeholder="Ex. Python" required>
+                        <input type="text" class="input-field" placeholder="" required>
+                        <input type="text" class="input-field" placeholder="" required>
+
+                    </section>
+
+                    <section class="middle-section">
+                       
+                        <h1 class="form-sub-headings middle responsibilities">Responsibilities</h1>
+                        <input type="text" class="input-field" placeholder="Ex. Club President/ Secretary" required>
+                        <input type="text" class="input-field" placeholder="" required>
+                        <input type="text" class="input-field" placeholder="" required>
+                        
+                        <h1 class="form-sub-headings middle accomplishments">Accomplishments</h1>
+                        <input type="text" class="input-field" placeholder="Ex. Hackathon Winner" required>
+                        <input type="text" class="input-field" placeholder="" required>
+                        <input type="text" class="input-field" placeholder="" required>
+
+                    </section>
+
+                    <section class="right-section">
+                        <h1 class="form-sub-headings right extra-curricular">Extra Curricular</h1>
+                        <input type="text" class="input-field" placeholder="Ex. Workshops attended" required>
+                        <input type="text" class="input-field" placeholder="" required>
+                        <input type="text" class="input-field" placeholder="" required>
+                    </section>
+
+                </section>
+
+                <section class="links-section">
+
+                    <section class="left-section">
+                        <h1 class="form-sub-headings certifications">Certifications</h1>
+                        <input type="text" class="input-field link" placeholder="Ex. Link to your microsoft AZ-900" required>
+                        <input type="text" class="input-field link" placeholder="" required>
+                        <input type="text" class="input-field link" placeholder="" required>
+                    </section>
+
+                    <!-- <section class="right-section">
+                        <h1 class="form-sub-headings links">Links</h1>
+                        <input type="text" class="input-field link" placeholder="Github profile Link" required>
+                        <input type="text" class="input-field link" placeholder="Linked in" required>
+                        <input type="text" class="input-field link" placeholder="Your site" required>
+                    </section> -->
+
+                </section>
+
+                <section class="section4">
+                    <input type="file" name="resume" class="resume" accept=".pdf, .doc, .docx" required>
+                    <input type="submit" value="submit" class="submit-button">  
+                </section>
+                    <!-- <footer class="form-footer">
+                        
+                    </footer> -->
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="ProfileStrength.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.getElementById("strength").innerText = "93%";

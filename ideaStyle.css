@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ideahubbody{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    background: url("images/dot-bg.svg");
+    background-size: 10%;
+}
+.Head{
+    margin-bottom: 40px;
+}
+.row{
+    margin-bottom: 30px;
+}
+.form{
+    background-color: lightgrey;
+}
+
