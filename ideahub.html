@@ -20,14 +20,17 @@
     <form action="ideahub.php" method="POST" class="mx-4">
         <div class="row">
             <div class="col">
-                <input type="text" name="title" id="title" class="form-control" placeholder="Title">
+                <input type="text" name="title" id="title" maxlength="80" class="form-control" placeholder="Title" 
+                style="font-size: 25px; border-radius: 0px;font-weight: bold;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <div class="mb-3">
                     <label for="" class="form-label">Abstract</label>
-                    <textarea class="form-control" name="abstract" maxlength="1000" id="abstract" rows="10"></textarea>
+                    <textarea class="form-control" name="abstract" minlength="100" maxlength="600" id="abstract" rows="6" cols="80" 
+                    placeholder="Abstract must be more than 100 characters and less then 600 characters"
+                    style="font-size: 22px; border-radius: 0px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
                 </div>
             </div>
             <div class="row">
@@ -35,19 +38,20 @@
                     <div class="mb-3">
                         <label for="" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
-                            placeholder="abc@mail.com">
-                        <small id="emailHelpId" class="form-text text-muted">Email will be kept protected and will not
+                            placeholder="abc@mail.com" style="font-size: 20px;border-radius: 0px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        <small id="emailHelpId" class="form-text text-muted" >Email will be kept protected and will not
                             be shared</small>
                     </div>
                 </div>
                 <div class="col">
-                    <label for="" class="form-label">Reg.ID</label>
-                    <input type="text" class="form-control roll" name="id" id="id" placeholder="Roll Number">
+                    <label for="" class="form-label" style="margin-left: 25px;" >Reg.ID</label>
+                    <input type="text" class="form-control roll" name="id" id="id" placeholder="Roll Number"
+                    style="font-size: 20px;border-radius: 0px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
                 </div>
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="submit" id="submit" class="btn-primary btn">Submit</button>
                 </div>
                 
             </div>

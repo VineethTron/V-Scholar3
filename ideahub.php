@@ -3,13 +3,15 @@
 $dbServername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "testdb";
-$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+
+$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sql1 = "CREATE DATABASE IF NOT EXISTS testdb";
+$sql1 = "CREATE DATABASE IF NOT EXISTS maindb";
+$dbName = "maindb";
 $result1 = mysqli_query($conn, $sql1);
+
 // if (mysqli_query($conn, $sql)) {
 //     echo "Database created successfully<br>";
 // } else {
@@ -17,15 +19,18 @@ $result1 = mysqli_query($conn, $sql1);
 // }
 
 // Step 2: Create a table if not exists with name "ideahub" in above database
-$sql2 = "CREATE TABLE IF NOT EXISTS ideahub (
+$sql2 = "USE maindb";
+$result2 = mysqli_query($conn, $sql2);
+
+$sql3 = "CREATE TABLE IF NOT EXISTS ideahub (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        title VARCHAR(50) NOT NULL,
-        abstract VARCHAR(500) NOT NULL,
+        title VARCHAR(80) NOT NULL,
+        abstract VARCHAR(600) NOT NULL,
         email VARCHAR(20) NOT NULL,
         regid VARCHAR(10) NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )";
-$result2 = mysqli_query($conn, $sql2);
+$result3 = mysqli_query($conn, $sql3);
 // if (mysqli_query($conn, $sql)) {
 //     echo "Table ideahub created successfully<br>";
 // } else {

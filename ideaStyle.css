@@ -16,6 +16,13 @@
     margin-bottom: 30px;
 }
 .form{
-    background-color: lightgrey;
+    background-color: #38CC77;
+}
+.roll{
+    margin-left: 25px;
+}
+
+.btn{
+    background-color: #03203C;
 }
 
