@@ -1,7 +1,7 @@
 <html lang="en">
     <head>
         <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
-        <title>Login to VardhamanScholor</title>
+        <title>Login to V-Scholor</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="LoginStyle.css" rel="stylesheet">

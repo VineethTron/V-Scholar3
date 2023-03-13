@@ -3,9 +3,7 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-// $dbname = "maindb";
 
-// Create connection
 $conn = mysqli_connect($host, $username, $password);
 
 // Check connection
@@ -14,8 +12,8 @@ if (!$conn) {
 }
 
 $sql1 = "CREATE DATABASE IF NOT EXISTS maindb";
-$dbname = "maindb";
 $result_db = mysqli_query($conn, $sql1);
+$dbname = "maindb";
 
 
 // Get the user ID and password from the form
@@ -37,7 +35,7 @@ if (!empty($_POST['submit'])) {
             } else {
 
                 // Create SQL query to check if the entered user ID and password match a record in the database
-                $sql = "SELECT * FROM users1 WHERE username='$user' AND password='$pass'";
+                $sql = "SELECT * FROM maindb.users1 WHERE username='$user' AND password='$pass'";
                 $result = mysqli_query($conn, $sql);
 
                 if (mysqli_num_rows($result) > 0) {
@@ -59,7 +57,7 @@ if (!empty($_POST['submit'])) {
             } else {
 
                 // Create SQL query to check if the entered user ID and password match a record in the database
-                $sql = "SELECT * FROM users1 WHERE username='$user' AND password='$pass'";
+                $sql = "SELECT * FROM maindb.users1 WHERE username='$user' AND password='$pass'";
                 $result = mysqli_query($conn, $sql);
 
                 if (mysqli_num_rows($result) > 0) {

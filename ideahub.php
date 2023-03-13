@@ -48,7 +48,7 @@ if(isset($_POST['submit'])) {
     mysqli_stmt_bind_param($stmt, "ssss", $title, $abstract, $email, $id);
     if (mysqli_stmt_execute($stmt)) {
             echo '<script type="text/javascript">';
-            echo 'alert("Data inserted Successfully");';
+            echo 'alert("Idea Submitted Successfully");';
             echo 'window.location.href = "ideahub.html";';
             echo '</script>';
         // header("Location: ideahub.html");
