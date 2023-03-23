@@ -151,7 +151,7 @@
                
 
                 if ($conn->affected_rows > 0) {
-                    echo "<script>alert('Data updated successfully.')</script>";
+                    echo "<script>alert('Details updated successfully.')</script>";
                   } else {
 
                     // $sql4 = "INSERT INTO maindb.profile (username) VALUES ('$username')";
@@ -202,7 +202,9 @@
                 }
             ?>
         <h2 class="form-heading">Want to know Profile Strength ..?</h2>
-
+        <a target="_blank" href="Scholar.html">
+                        <button class="submit-btn home">Home</button>
+        </a> 
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                 <div class="container">
                     <div class="column">
@@ -239,7 +241,6 @@
                     <input type="text" class="field profile_strength" name="ps" id="ps" placeholder="0%" value="<?php echo $ps != "" ? $ps."%" : "0%"; ?>">
                 </div>
             </form>
-
        </div>
     </body>
    

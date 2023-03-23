@@ -56,6 +56,7 @@ body{
     padding-bottom: 5px;
     color:#03203C;
     margin-left: 410px;
+    margin-bottom: 30px;
 }
 
 .submit-btn{
@@ -90,7 +91,18 @@ body{
 
 .ps-label{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 145px;
+    margin-left: 147px;
     font-size: 18px;
     font-weight: bold;
 }
+
+.home{
+    margin-left: 700px;
+    margin-right: 10px;
+    width: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: greenyellow;
+    color: black;
+}
+
