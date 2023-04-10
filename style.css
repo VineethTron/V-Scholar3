@@ -37,6 +37,7 @@ body{
     margin-right: 30px;
     text-align: center;
     float: right;
+    border-radius: 0px;
 }
 .login-btn :hover{
     background-color: #3d3d3d;
@@ -172,9 +173,6 @@ body{
     text-align:center
   }
 }
-
-
-
 
 
 
